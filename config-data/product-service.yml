@@ -1,0 +1,32 @@
+# Config de aplicacion
+server:
+  port: 8091
+
+# link H2
+spring:
+  h2:
+    console:
+      enabled: true
+  # Propiedades de la conexion
+  datasource:
+    url: jdbc:h2:mem:productDB;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    platform: h2
+    username: sa
+    password:
+  # JPA - HIBERNATE
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        show-sql: true
+        use_sql_comments: false
+        format_sql: false
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-5%p} %m%n"
+
