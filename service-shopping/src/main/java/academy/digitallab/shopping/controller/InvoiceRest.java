@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @RestController
-@RequestMapping("/invoices")
+@RequestMapping("/api/invoices")
 public class InvoiceRest {
 
     @Autowired

@@ -21,6 +21,17 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.3.1.RELEASE'
+
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-openfeign-core
+	compile group: 'org.springframework.cloud', name: 'spring-cloud-openfeign-core', version: '2.2.2.RELEASE'
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-hystrix
+	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-hystrix', version: '1.4.7.RELEASE'
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-hystrix-dashboard
+	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-hystrix-dashboard', version: '1.4.7.RELEASE'
+
+
 	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client
 	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version: '2.2.2.RELEASE'
 

@@ -1,5 +1,6 @@
 package academy.digitallab.shopping.entity;
 
+import academy.digitallab.shopping.model.Products;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -24,8 +25,8 @@ public class InvoiceItem {
     @Transient
     private Double subTotal;
 
-    //@Transient
-    //private Product product;
+    @Transient
+    private Products products;
 
     public Double getSubTotal(){
         if (this.price >0  && this.quantity >0 ){
