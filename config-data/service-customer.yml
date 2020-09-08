@@ -22,7 +22,7 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     properties:
       hibernate:
-        show-sql: true
+        show_sql: true
         use_sql_comments: false
         format_sql: false
 
